@@ -1,4 +1,5 @@
 # G2
+Discentes: Anna Luiza de Souza Amaral; Marcos dos Reis Vargas; Robson Cleiton Dias Silva
 
 Projeto de um Sistema de Monitoramento de Consumo de Energia
 
