@@ -17,3 +17,52 @@ Simular o consumo de energia elétrica de uma residência a partir do tipo e da 
 Problema:
 
 A necessidade de acompanhar o uso dos aparelhos elétricos surge devido ao aumento do consumo de energia elétrica em residências e estabelecimentos. Entretanto, na maioria dos casos, os consumidores têm acesso apenas ao valor total da conta de energia, sem informações detalhadas sobre quanto cada equipamento contribui para esse consumo. Essa falta de monitoramento dificulta a identificação de dispositivos que consomem mais energia e impede a adoção de medidas para reduzir desperdícios e melhorar a eficiência energética. Assim, surge a necessidade de um sistema capaz de monitorar e estimar o consumo de energia dos diferentes dispositivos elétricos, permitindo ao usuário acompanhar de forma mais clara e organizada como a energia está sendo utilizada.
+
+Cronograma:
+
+1ª Entrega (23/03/26):
+
+Identificação do problema a ser resolvido
+Definição dos objetivos e problema do sistema
+
+2ª Entrega – (06/04/2026)
+
+Identificação das classes principais
+Definição de:
+Atributos
+Métodos
+Relacionamentos (herança, associação, composição)
+Criação de diagramas, como:
+Diagrama de Classes (UML)
+Diagrama de Casos de Uso
+
+3ª Entrega – (20/04/26)
+
+Refinamento das classes
+Definição de:
+Interfaces
+Encapsulamento
+Padrões de projeto (se necessário)
+Organização dos pacotes
+
+4ª Entrega – Implementação - Codificação em Java - (04/05/26)
+
+Desenvolvimento das classes em Java
+Aplicação dos conceitos de Orientação a Objetos:
+Encapsulamento
+Herança
+Polimorfismo
+Abstração
+Integração entre as partes do sistema
+
+5ª Entrega – Entrega Final - (11/06/26)
+
+Testes:
+Unitários
+Integração
+Correção de erros (debug)
+Documentação:
+Código (comentários)
+Manual do usuário
+Relatório final do projeto
+
