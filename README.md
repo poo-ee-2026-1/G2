@@ -55,7 +55,7 @@ Polimorfismo
 Abstração
 Integração entre as partes do sistema
 
-5ª Entrega – Entrega Final - (11/06/26)
+5ª Entrega – versão definitiva - (18/05/26)
 
 Testes:
 Unitários
@@ -65,4 +65,6 @@ Documentação:
 Código (comentários)
 Manual do usuário
 Relatório final do projeto
+
+6ª Entrega - Apresentação Final do Projeto
 
