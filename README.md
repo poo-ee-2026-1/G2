@@ -22,7 +22,7 @@ Aula do dia 20/04
 
 Definição das classes, herança, encapsulamento e polimorfismo
 
-Classes: Cliente; Unidade consumidora; Medidor; Dispositivos; Fatura; Prestadora de serviço; Funcionário; Receber; Pagar.
+Classes: Cliente (atributos: código do cliente, nome, cpf, cnpj, endereço); Unidade consumidora (atributos: código da unidade, tipo, histórico de consumo) ; Medidor (número de série, leitura atual, leitura anterior); Dispositivos (nome, potência, horas de uso); Fatura (data de vencimento, valor total, mês de referência, status do pagamento); Prestadora de serviço (cnpj, nome comercial, razão social, área de atuação, suporte, taxa base, lista de funcionários, lista de unidades consumidoras); Funcionário (matrícula, cargo, departamento, função); Receber (crédito, erro de leitura, ressarcimento); Pagar (fatura, multas).
 
 Herança: Diferentes tipos de clientes (cliente residencial; cliente comercial; cliente industrial); diferentes tipos de dispositivos (geladeira; televisão; forno elétrico; ferro elétrico; ar condicionado, etc.); diferentes tipos de funcionários da empresa prestadora de serviço (funcionários do atendimento; funcionários do financeiro, técnicos, etc).
 
