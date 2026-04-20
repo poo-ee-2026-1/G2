@@ -18,6 +18,19 @@ Problema:
 
 A necessidade de acompanhar o uso dos aparelhos elétricos surge devido ao aumento do consumo de energia elétrica em residências e estabelecimentos. Entretanto, na maioria dos casos, os consumidores têm acesso apenas ao valor total da conta de energia, sem informações detalhadas sobre quanto cada equipamento contribui para esse consumo. Essa falta de monitoramento dificulta a identificação de dispositivos que consomem mais energia e impede a adoção de medidas para reduzir desperdícios e melhorar a eficiência energética. Assim, surge a necessidade de um sistema capaz de monitorar e estimar o consumo de energia dos diferentes dispositivos elétricos, permitindo ao usuário acompanhar de forma mais clara e organizada como a energia está sendo utilizada.
 
+Aula do dia 20/04
+
+Definição das classes, herança, encapsulamento e polimorfismo
+
+Classes: Cliente; Unidade consumidora; Medidor; Dispositivos; Fatura; Prestadora de serviço; Funcionário; Receber; Pagar.
+
+Herança: Diferentes tipos de clientes (cliente residencial; cliente comercial; cliente industrial); diferentes tipos de dispositivos (geladeira; televisão; forno elétrico; ferro elétrico; ar condicionado, etc.); diferentes tipos de funcionários da empresa prestadora de serviço (funcionários do atendimento; funcionários do financeiro, técnicos, etc).
+
+Encapsulamento: O atributo leitura atual do medidor não deve ser alterada manualmente por qualquer parte do sistema (privado), ou seja, os dados de leitura e valores de tarifas devem ser protegidos.
+
+Polimorfismo: O método calcular o valor da conta deve estar presente para todos os clientes. No entanto, a conta deve ser calculada de forma diferente para o cliente residencial, industrial ou comercial. Ou seja, devem haver diferentes fórmulas para calcular o custo.
+
+
 Cronograma:
 
 1ª Entrega (23/03/26):
