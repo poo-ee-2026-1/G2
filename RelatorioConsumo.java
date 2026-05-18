@@ -1,20 +1,26 @@
-package energia;
+package sistema;
 
-public class RelatorioConsumo {
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Random;
 
-    private double consumoTotal;
-    private double custoTotal;
+public class SimuladorConsumo {
 
-    public void gerarRelatorio(double consumoTotal, double custoTotal) {
+    public static Map<String, Double> gerarConsumoMensal() {
+        Map<String, Double> dados = new LinkedHashMap<>();
 
-        this.consumoTotal = consumoTotal;
-        this.custoTotal = custoTotal;
-    }
+        String[] meses = {
+                "Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+                "Jul", "Ago", "Set", "Out", "Nov", "Dez"
+        };
 
-    public void exibirRelatorio() {
+        Random rand = new Random();
 
-        System.out.println("===== RELATÓRIO =====");
-        System.out.println("Consumo Total: " + consumoTotal + " kWh");
-        System.out.println("Custo Total: R$ " + custoTotal);
+        for (String mes : meses) {
+            double valor = 200 + rand.nextDouble() * 300;
+            dados.put(mes, valor);
+        }
+
+        return dados;
     }
 }
