@@ -1,18 +1,11 @@
-package energia;
+package sistema;
 
-public class Usuario {
+public abstract class Pessoa {
+    protected String nome;
+    protected String email;
 
-    private String nome;
-    private String endereco;
-
-    public Usuario(String nome, String endereco) {
+    public Pessoa(String nome, String email) {
         this.nome = nome;
-        this.endereco = endereco;
-    }
-
-    public void visualizarRelatorio() {
-
-        System.out.println("Usuário: " + nome);
-        System.out.println("Endereço: " + endereco);
+        this.email = email;
     }
 }
