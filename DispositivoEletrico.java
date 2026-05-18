@@ -1,50 +1,41 @@
-abstract class DispositivoEletrico {
+package sistema;
+
+public abstract class Dispositivo {
     protected String nome;
-    protected double potenciaWatts;
-    protected double horasUsoPorDia;
+    protected double potencia;
+    protected double horasUso;
 
-    public DispositivoEletrico(String nome, double potenciaWatts, double horasUsoPorDia) {
+    public Dispositivo(String nome, double potencia, double horasUso) {
         this.nome = nome;
-        this.potenciaWatts = potenciaWatts;
-        this.horasUsoPorDia = horasUsoPorDia;
+        this.potencia = potencia;
+        this.horasUso = horasUso;
     }
 
-    public double calcularConsumoDiario() {
-        return (potenciaWatts * horasUsoPorDia) / 1000; // kWh
-    }
-
-    public abstract String getTipo();
-}
-
-class Lampada extends DispositivoEletrico {
-    public Lampada(String nome, double potencia, double horas) {
-        super(nome, potencia, horas);
-    }
-
-    @Override
-    public String getTipo() {
-        return "Iluminação";
+    public double calcularConsumo() {
+        return (potencia * horasUso) / 1000;
     }
 }
 
-class ArCondicionado extends DispositivoEletrico {
-    public ArCondicionado(String nome, double potencia, double horas) {
-        super(nome, potencia, horas);
-    }
-
-    @Override
-    public String getTipo() {
-        return "Climatização";
+class Eletrodomestico extends Dispositivo {
+    public Eletrodomestico(String nome, double potencia, double horasUso) {
+        super(nome, potencia, horasUso);
     }
 }
 
-class Televisao extends DispositivoEletrico {
-    public Televisao(String nome, double potencia, double horas) {
-        super(nome, potencia, horas);
+class Eletronico extends Dispositivo {
+    public Eletronico(String nome, double potencia, double horasUso) {
+        super(nome, potencia, horasUso);
     }
+}
 
-    @Override
-    public String getTipo() {
-        return "Entretenimento (linha marrom)";
+class EquipamentoIndustrial extends Dispositivo {
+    public EquipamentoIndustrial(String nome, double potencia, double horasUso) {
+        super(nome, potencia, horasUso);
+    }
+}
+
+class EquipamentoComercial extends Dispositivo {
+    public EquipamentoComercial(String nome, double potencia, double horasUso) {
+        super(nome, potencia, horasUso);
     }
 }
