@@ -1,41 +1,22 @@
-package energia;
+package sistema;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MedidorEnergia {
+    private List<LeituraConsumo> leituras = new ArrayList<>();
 
-    private ArrayList<DispositivoEletrico> dispositivos;
-    private double tarifaEnergia;
-
-    public MedidorEnergia(double tarifaEnergia) {
-        this.tarifaEnergia = tarifaEnergia;
-        dispositivos = new ArrayList<>();
+    public void registrarLeitura(double consumo) {
+        leituras.add(new LeituraConsumo(consumo));
     }
 
-    public void adicionarDispositivo(DispositivoEletrico d) {
-        dispositivos.add(d);
-    }
-
-    public double calcularConsumoTotal() {
-
+    public double getConsumoTotal() {
         double total = 0;
 
-        for (DispositivoEletrico d : dispositivos) {
-            total += d.calcularConsumo();
+        for (LeituraConsumo l : leituras) {
+            total += l.getConsumo();
         }
 
         return total;
-    }
-
-    public double calcularCustoTotal() {
-
-        return calcularConsumoTotal() * tarifaEnergia;
-    }
-
-    public void listarDispositivos() {
-
-        for (DispositivoEletrico d : dispositivos) {
-            d.exibirInformacoes();
-        }
     }
 }
